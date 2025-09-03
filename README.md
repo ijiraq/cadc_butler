@@ -46,13 +46,9 @@ is set to DISABLED to disable this feature of the Butler server, which is the LS
 is set to cadc to ensure that the Butler
 server does not pass back presigned URLs to clients.
 
-#### PGPASS File Setup
+#### PGPASSWORD 
 
-* For regular user access to the Butler database set the PGPASSFILE
-  environment variable to point to lsstuser.pgpass file.
-
-* For administrative access to the Butler database set the PGPASSFILE
-  environment variable to point to lsstadmin.pgpass file.
+* At launch time, set the password for the lsstuser account as the PGPASSWORD environment variable or use another method.
 
 ## dc2.yaml
 
