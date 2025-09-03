@@ -14,4 +14,3 @@
         opaque: lsst.daf.butler.registry.opaque.ByNameOpaqueTableStorageManager
       namespace: lsstdc2
       username: lsstuser
-      password: welcome
