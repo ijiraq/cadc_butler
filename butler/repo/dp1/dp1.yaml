@@ -4,7 +4,7 @@
         table: file_datastore_records
       root: https://ws.canfar.net/lsst/minoc/files/lsst:dp1
     registry:
-      db: postgresql://lsstuser@ad-uv-01.canfar.net:5432/butlerlsstdb
+      db: postgresql://ad-uv-01.canfar.net:5432/butlerlsstdb
       managers:
         attributes: lsst.daf.butler.registry.attributes.DefaultButlerAttributeManager
         collections: lsst.daf.butler.registry.collections.synthIntKey.SynthIntKeyCollectionManager
@@ -13,3 +13,5 @@
         dimensions: lsst.daf.butler.registry.dimensions.static.StaticDimensionRecordStorageManager
         opaque: lsst.daf.butler.registry.opaque.ByNameOpaqueTableStorageManager
       namespace: lsstdp1
+      username: lsstuser
+      password: welcome
