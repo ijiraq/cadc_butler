@@ -62,3 +62,18 @@ The dp1.yaml file contains the configuration for the Butler database for the DP1
 
 The Butler Client is configured by setting the Butler to:  
 https://your.server.domain/api/butler/repo/dp1/butler.yaml
+
+
+## INGESTING CONTENT
+
+The content of the butler is loaded from a tar file that should be distributed via rucio
+To add this content to the data butler database use the ingest.sh script in butler_ingest
+
+https://rubinobs.atlassian.net/wiki/external/ZmI4OGZmY2ZiY2I5NDBlOTk4YzJhNzJjODFjNjg1MTM
+for details on setting up a butler remote server this script should
+be run on the lsst:sciplat-lab container from a location that can make
+direct connection to the postgres database
+
+Put the list of containers that we populating into our butler in the file
+
+butler_ingest/container_list.txt

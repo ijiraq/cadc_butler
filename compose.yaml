@@ -12,3 +12,13 @@ services:
     command:
       - uvicorn
       - lsst.daf.butler.remote_butler.server:create_app
+  ingest:
+    image :  images.canfar.net/lsst/sciplat-lab:20250904
+    env_file:
+      - pg.env
+    volumes:
+      - ./ingest:/opt/ingest
+    working_dir: /tmp
+    command:
+      - bash /opt/ingest/ingest.sh
+

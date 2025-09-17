@@ -1,0 +1,9 @@
+object
+ss_object
+ss_source
+visit_detector_table
+visit_sumary
+visit_table
+deep_coadd
+deep_coadd_bacground
+deep_coadd_n_image skyMap
