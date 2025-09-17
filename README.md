@@ -77,3 +77,11 @@ direct connection to the postgres database
 Put the list of containers that we populating into our butler in the file
 
 butler_ingest/container_list.txt
+
+Place the TAR file for the data release into a place you like and define
+PATH_TO_BUTLER_DUMP=${PATH_TO_BUTLER_DUMP:-${DIRNAME}/dp1-dump-DM-51372.tar}
+to point at that file in compose.yaml or elsewhere and then
+
+docker compose run ingest
+
+
